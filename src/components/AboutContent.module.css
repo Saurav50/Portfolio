@@ -1,0 +1,39 @@
+.content {
+  width: 40%;
+  padding: 5% 10%;
+  /* color: white !important; */
+}
+.intro {
+  color: #46b2a1;
+  font-size: 1.1rem;
+}
+.name {
+  margin-top: 0.5rem;
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: whitesmoke;
+  margin-bottom: 0.5rem;
+}
+.build {
+  font-size: 3.5rem !important;
+  font-weight: bolder;
+  color: #687690;
+  opacity: 0.5;
+  margin: 0 !important;
+}
+.para {
+  color: #687690;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  max-width: 80%;
+  align-content: first baseline;
+}
+
+.github {
+  border: 2px solid #46b2a1;
+  font-size: 1rem !important;
+  padding: 0.7rem 1rem;
+  border-radius: 0.2rem;
+  color: #46b2a1 !important;
+  text-decoration: none;
+}

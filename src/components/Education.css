@@ -1,0 +1,64 @@
+.education {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+
+.education-item {
+  margin-bottom: 20px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: transparent;
+  max-width: 40%;
+}
+.education-item p {
+  color: darkolivegreen;
+  font-weight: 900;
+}
+.education-item p span {
+  color: wheat;
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+.education-item h3 {
+  color: #46b2a1;
+  font-size: 1.25rem;
+  opacity: 0.9;
+
+  margin-bottom: 10px;
+}
+
+.education-item .institution {
+  color: silver;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.education-item .location,
+.education-item .graduation-date {
+  color: #888;
+  margin-left: 10px;
+}
+
+.education-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education-item ul li {
+  color: rgb(125, 191, 232);
+  opacity: 0.6;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+.item1 {
+  margin-bottom: 15%;
+}
+.item2 {
+  margin-top: 15%;
+}

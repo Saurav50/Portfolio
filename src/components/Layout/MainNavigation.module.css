@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 5rem;
+  display: flex;
+  padding: 0.5rem 5%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b182f;
+  font-family: mooli;
+  z-index: 100;
+}
+
+.logo {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  color: #46b2a1;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left: 1.75rem;
+  font-size: 1.1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #687690;
+}
+.nav a span {
+  color: #46b2a1;
+  margin-right: 0.2rem;
+}
+.resume {
+  border: 2px solid #46b2a1;
+  font-size: 1rem !important;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.2rem;
+  color: #46b2a1 !important;
+  font-weight: bold;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active,
+.resume a:hover {
+  color: #e6fcfc !important;
+}

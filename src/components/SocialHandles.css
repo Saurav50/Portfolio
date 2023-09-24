@@ -1,0 +1,21 @@
+/* SocialMediaHandles.module.css */
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  gap: 10px; /* Add spacing between social media links */
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Customize styling for the icons as needed */
+.social-media-link svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; /* Add spacing between icon and text */
+}

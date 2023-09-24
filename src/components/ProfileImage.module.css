@@ -1,0 +1,12 @@
+.pfp {
+  width: 65%;
+  /* height: 100%; */
+  padding-left: 5%;
+
+  /* box-shadow: 2px solid white; */
+}
+.pfpHandle {
+  display: flex;
+  padding: 4% 0;
+  justify-content: start;
+}

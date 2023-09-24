@@ -1,0 +1,35 @@
+.skills {
+  /* min-height: 600px; */
+
+  padding: 0 10%;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.skills h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+h3 {
+  color: #46b2a1;
+}
+.skills ul {
+  list-style: none outside none !important ;
+  padding: 0;
+}
+.skills li {
+  list-style: none !important ;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
