@@ -43,15 +43,29 @@ const Contact = () => {
       <form ref={form} onSubmit={sendEmail}>
         <div>
           <label>Name</label>
-          <input type="text" name="user_name" ref={nameRef} />
+          <input
+            type="text"
+            name="user_name"
+            ref={nameRef}
+            placeholder="Jane Doe"
+          />
         </div>
         <div>
           <label>Email</label>
-          <input type="email" name="user_email" ref={emailRef} />
+          <input
+            type="email"
+            name="user_email"
+            ref={emailRef}
+            placeholder="JaneDoe12@yahoo.com"
+          />
         </div>
         <div>
           <label>Message</label>
-          <textarea name="message" ref={msgRef} />
+          <textarea
+            name="message"
+            ref={msgRef}
+            placeholder="Hi this side, Jane Doe ..."
+          />
         </div>
         <div>
           <input type="submit" value="Send" />
