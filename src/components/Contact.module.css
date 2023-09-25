@@ -63,3 +63,9 @@ input[type="submit"] {
   color: white;
   border: none;
 }
+
+@media screen and (max-width: 768px) {
+  .contact {
+    max-width: 95%;
+  }
+}

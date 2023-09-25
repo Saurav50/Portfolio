@@ -60,3 +60,10 @@ a:focus,
 a:hover {
   color: #46b2a1;
 }
+
+@media screen and (max-width: 768px) {
+  .flex_row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

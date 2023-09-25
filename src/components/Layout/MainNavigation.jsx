@@ -1,6 +1,11 @@
 import styles from "./MainNavigation.module.css";
-
+import React, { useState } from "react";
 const MainNavigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // Function to toggle the mobile menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <>
       <header className={styles.header}>
@@ -24,7 +29,29 @@ const MainNavigation = () => {
             </text>
           </svg>
         </div>
-        <nav className={styles.nav}>
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          <button
+            id="menu-btn"
+            className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""}`}
+          >
+            <span
+              className={`${styles.hamburgerTop} ${
+                isMenuOpen ? styles.active : ""
+              }`}
+            ></span>
+            <span
+              className={`${styles.hamburgerMiddle} ${
+                isMenuOpen ? styles.active : ""
+              }`}
+            ></span>
+            <span
+              className={`${styles.hamburgerBottom} ${
+                isMenuOpen ? styles.active : ""
+              }`}
+            ></span>
+          </button>
+        </div>
+        <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ""}`}>
           <ul>
             <li>
               <a href="#about" activeClassName={styles.active}>

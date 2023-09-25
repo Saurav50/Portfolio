@@ -2,3 +2,19 @@
   display: flex;
   padding-top: 7rem;
 }
+@media (min-width: 880px) and (max-width: 1244px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

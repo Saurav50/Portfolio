@@ -33,3 +33,10 @@ h3 {
   gap: 3rem;
   flex-wrap: wrap;
 }
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+}

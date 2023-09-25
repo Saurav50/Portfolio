@@ -37,3 +37,45 @@
   color: #46b2a1 !important;
   text-decoration: none;
 }
+.github:hover {
+  /* background: ;
+   */
+  border-color: saddlebrown;
+  /* opacity: 0.4; */
+  /* color: black; */
+}
+
+@media (min-width: 880px) and (max-width: 1244px) {
+  .content {
+    width: 80%;
+    /* align-self: center;
+     */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: c;
+      */
+    align-items: center;
+    /* padding: 5% 10%; */
+  }
+}
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .name {
+    margin-top: 0.5rem;
+    font-size: 2rem;
+  }
+  .build {
+    font-size: 1.8rem !important;
+  }
+  .para {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+}

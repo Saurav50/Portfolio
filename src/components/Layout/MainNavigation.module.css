@@ -54,3 +54,97 @@
 .resume a:hover {
   color: #e6fcfc !important;
 }
+/* Hamburger Icon (Hidden on Desktop) */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    /* color: white; */
+    background-color: transparent;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+    background-color: transparent;
+    border: none;
+  }
+
+  .hamburgerTop,
+  .hamburgerMiddle,
+  .hamburgerBottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(0);
+    transition: all 0.5s;
+  }
+
+  .hamburgerMiddle {
+    transform: translateY(7px);
+  }
+
+  .hamburgerBottom {
+    transform: translateY(14px);
+  }
+
+  .active {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+  }
+  .active .hamburgerTop {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
+  .active .hamburgerMiddle {
+    display: none;
+  }
+  .active .hamburgerBottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #333;
+
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    transition: 0.5s;
+    border: 0.5px solid #46b2a1;
+    border-radius: 10px;
+
+    /* visibility: hidden; */
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav.active {
+    display: flex;
+  }
+
+  .nav li {
+    margin: 10px 0;
+  }
+}

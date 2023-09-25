@@ -62,3 +62,13 @@
 .item2 {
   margin-top: 15%;
 }
+
+/* Mobile-Screens */
+@media screen and (max-width: 768px) {
+  .education {
+    flex-direction: column;
+  }
+  .education-item {
+    max-width: 80%;
+  }
+}

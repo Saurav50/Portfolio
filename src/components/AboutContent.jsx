@@ -8,7 +8,7 @@ const AboutContent = () => {
       <p className={styles.para}>
         I'm a Frontend Developer specializing in building (and occasionally
         designing) exceptional digital experiences. Currently, I'm Focused on
-        building accessible,human-centered products.
+        building accessible, human-centered products.
       </p>
       <a href="https://github.com/Saurav50" className={styles.github}>
         Check out my github!

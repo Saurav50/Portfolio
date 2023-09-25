@@ -33,3 +33,9 @@
     transparent
   );
 }
+
+@media screen and (max-width: 768px) {
+  .scrollbar {
+    display: none;
+  }
+}

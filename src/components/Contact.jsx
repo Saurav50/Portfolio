@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // npm i @emailjs/browser
 
@@ -24,7 +26,8 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           console.log("message sent");
-          alert("Message sent successfully!");
+          // alert("Message sent successfully!");
+          toast("Message sent successfully!");
           emailRef.current.value = "";
           msgRef.current.value = "";
           nameRef.current.value = "";
@@ -53,6 +56,7 @@ const Contact = () => {
         <div>
           <input type="submit" value="Send" />
         </div>
+        <ToastContainer />
       </form>
     </div>
   );

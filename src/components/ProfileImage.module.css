@@ -10,3 +10,12 @@
   padding: 4% 0;
   justify-content: start;
 }
+
+/* Mobile screens */
+@media screen and (max-width: 768px) {
+  .pfpHandle {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
