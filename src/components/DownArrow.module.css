@@ -62,3 +62,10 @@
     opacity: 1;
   }
 }
+
+/* Mobile Screen */
+@media screen and (max-width: 768px) {
+  .downArrowButton {
+    margin-top: -4%;
+  }
+}

@@ -36,6 +36,9 @@ h3 {
 
 /* Mobile screens */
 @media screen and (max-width: 768px) {
+  .skills {
+    padding-top: 5rem;
+  }
   .cards {
     flex-direction: column;
   }

@@ -66,4 +66,10 @@ a:hover {
     flex-direction: column;
     gap: 2rem;
   }
+  .social_media {
+    flex-direction: column;
+  }
+  .social_text ul {
+    display: none;
+  }
 }
