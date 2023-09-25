@@ -67,6 +67,12 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
+  .header {
+    max-height: 3.5rem;
+  }
+  .logo {
+    font-size: 1rem;
+  }
   .menu-icon {
     display: block;
     /* color: white; */
@@ -147,4 +153,8 @@
   .nav li {
     margin: 10px 0;
   }
+}
+.bordered {
+  border-bottom: 1px solid #ccc;
+  transition: border 0.3s ease;
 }

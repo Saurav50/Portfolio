@@ -13,6 +13,7 @@
 /* Mobile Screens */
 @media screen and (max-width: 768px) {
   .about {
+    padding-top: 5rem;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;

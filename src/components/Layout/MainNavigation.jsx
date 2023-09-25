@@ -1,14 +1,34 @@
 import styles from "./MainNavigation.module.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 const MainNavigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   // Function to toggle the mobile menu
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
     <>
-      <header className={styles.header}>
+      <header
+        className={`${styles.header} ${scrolling ? styles.bordered : ""}`}
+      >
         <div className={styles.logo}>
           <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
             <polygon
