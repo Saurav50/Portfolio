@@ -1,5 +1,6 @@
 import styles from "./MainNavigation.module.css";
 import React, { useState, useEffect } from "react";
+import logo from "../../assets/logo.jpg";
 const MainNavigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
@@ -29,8 +30,8 @@ const MainNavigation = () => {
       <header
         className={`${styles.header} ${scrolling ? styles.bordered : ""}`}
       >
-        <div className={styles.logo}>
-          <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+        <div>
+          {/* <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
             <polygon
               points="25,5 45,15 45,35 25,45 5,35 5,15"
               fill="none"
@@ -47,7 +48,8 @@ const MainNavigation = () => {
             >
               S
             </text>
-          </svg>
+          </svg> */}
+          <img src={logo} alt="" className={styles.logo} />
         </div>
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <button
