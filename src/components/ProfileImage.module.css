@@ -1,7 +1,12 @@
 .pfp {
-  width: 65%;
-  /* height: 100%; */
+  width: 60%;
+  /* height: 60%; */
   padding-left: 5%;
+
+  /* box-shadow: 2px solid white; */
+}
+.pfpImg {
+  width: 100%;
 
   /* box-shadow: 2px solid white; */
 }
@@ -9,9 +14,15 @@
   display: flex;
   padding: 4% 0;
   justify-content: start;
+  align-items: center;
 }
 
 /* Mobile screens */
+@media screen and (max-width: 1244px) {
+  .pfpHandle {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .pfpHandle {
     flex-direction: column;

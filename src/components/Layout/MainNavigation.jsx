@@ -100,7 +100,7 @@ const MainNavigation = () => {
             </li>
             <li>
               <a
-                href="https://drive.google.com/file/d/1xarFEuKAPvUdDaHMQc95I5fXPPURl0zl/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1bXQ0lgcM1upY34bZvS7a5xAGaHv5N9Wh/view?usp=sharing"
                 activeClassName={styles.active}
                 className={styles.resume}
               >
