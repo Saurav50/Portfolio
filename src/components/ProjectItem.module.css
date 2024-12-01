@@ -7,7 +7,7 @@
 .text {
   color: white;
   padding: 0 30px;
-  text-align: justify;
+  text-align: center;
 }
 .links {
   display: flex;
